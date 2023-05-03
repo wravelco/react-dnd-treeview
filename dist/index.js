@@ -896,7 +896,7 @@ var Node = function (props) {
         handleRef: handleRef,
         onToggle: handleToggle,
     };
-    return (React.createElement(Component, { ref: containerRef, className: className, role: "listitem" },
+    return (React.createElement(Component, { ref: containerRef, className: className, item: item, itemParams: params, role: "listitem" },
         treeContext.render(item, params),
         enableAnimateExpand && params.hasChild && (React.createElement(AnimateHeight, { isVisible: open },
             React.createElement(Container, { parentId: props.id, depth: props.depth + 1 }))),
