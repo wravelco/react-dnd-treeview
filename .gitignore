@@ -1,4 +1,4 @@
 node_modules/
-dist/
+.idea/
 storybook-static/
 .DS_Store
